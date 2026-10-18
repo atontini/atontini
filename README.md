@@ -8,7 +8,7 @@ I’m interested in how software behaves beyond the happy path: under load, with
 
 My interests span higher-level application development with C# and .NET, software architecture, and embedded systems and firmware. I’m particularly interested in working closer to hardware: industrial automation, end-of-line testing, CAN communication, and hardware/software integration.
 
-I care about reliability, maintainability, and making good use of memory and compute. My public work includes C communication code and R statistical analysis; I’m also exploring Rust developer tooling through contributions to Tokensave.
+I care about reliability, maintainability, and making good use of memory and compute. My public work includes C communication code; I’m also exploring Rust developer tooling through contributions to Tokensave.
 
 Beyond code, I contribute articles and help organize events with [Italian Embedded](https://www.italianembedded.com), connecting people interested in embedded systems. I’m also an organizer of [Rust Milano](https://www.meetup.com/rust-language-milan/), the Milan Rust community.
 
@@ -16,7 +16,7 @@ Beyond code, I contribute articles and help organize events with [Italian Embedd
 
 | Area | Technologies and context |
 | :--- | :--- |
-| Public projects & contributions | **C**, **Rust**, **R**, GPI-2 / GASPI, Jupyter with an R kernel |
+| Public projects & contributions | **C**, **Rust**, GPI-2 / GASPI, Jupyter |
 | Web & everyday tools | HTML / CSS, Jekyll, Git, Linux |
 | Application & hardware interests | C# / .NET, embedded firmware, CAN, industrial test systems |
 
@@ -38,9 +38,9 @@ An educational example of array exchange between processes on a periodic two-dim
 
 ### [ICI-RT-NSCLC](https://github.com/atontini/ICI-RT-NSCLC)
 
-**R · metaSurvival · Jupyter · Statistical analysis**
+**Jupyter · Statistical analysis**
 
-Research code accompanying a study of immune checkpoint inhibitors and radiotherapy in advanced non-small cell lung cancer. An R script and equivalent R notebook pool overall survival curves from aggregate study data. The repository covers this specific analysis within the wider publication.
+Research code accompanying a study of immune checkpoint inhibitors and radiotherapy in advanced non-small cell lung cancer. The analysis pools overall survival curves from aggregate study data, with both script and notebook formats available. The repository covers this specific analysis within the wider publication.
 
 ### [Personal website](https://github.com/atontini/atontini.github.io)
 
