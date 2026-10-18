@@ -10,7 +10,7 @@ My interests span higher-level application development with C# and .NET, softwar
 
 I care about reliability, maintainability, and making good use of memory and compute. My public work includes C communication code and R statistical analysis; I’m also exploring Rust developer tooling through contributions to Tokensave.
 
-Beyond code, I contribute articles and help organize events with [Italian Embedded](https://www.italianembedded.com), connecting people interested in embedded systems.
+Beyond code, I contribute articles and help organize events with [Italian Embedded](https://www.italianembedded.com), connecting people interested in embedded systems. I’m also an organizer of [Rust Milano](https://www.meetup.com/rust-language-milan/), the Milan Rust community.
 
 ## Technologies & focus
 
@@ -47,6 +47,18 @@ Research code accompanying a study of immune checkpoint inhibitors and radiother
 **Jekyll · HTML · CSS**
 
 My personal homepage and blog, built as a static site with reusable layouts and published through GitHub Pages.
+
+## Recent public activity
+
+A rolling snapshot of my public GitHub work, refreshed daily. [All activity](https://github.com/atontini?tab=overview).
+
+<!-- ACTIVITY:START -->
+- 2026-10-18 — Pushed changes to [atontini/gpi2-example](https://github.com/atontini/gpi2-example)
+- 2026-10-18 — Opened pull request [aovestdipaperino/tokensave#706](https://github.com/aovestdipaperino/tokensave/pull/706)
+- 2026-10-17 — Opened pull request [aovestdipaperino/tokensave#705](https://github.com/aovestdipaperino/tokensave/pull/705)
+- 2026-10-17 — Opened pull request [aovestdipaperino/tokensave#704](https://github.com/aovestdipaperino/tokensave/pull/704)
+- 2026-10-17 — Opened pull request [aovestdipaperino/tokensave#703](https://github.com/aovestdipaperino/tokensave/pull/703)
+<!-- ACTIVITY:END -->
 
 ## Connect
 
