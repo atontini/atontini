@@ -8,7 +8,7 @@ I’m interested in how software behaves beyond the happy path: under load, with
 
 My interests span higher-level application development with C# and .NET, software architecture, and embedded systems and firmware. I’m particularly interested in working closer to hardware: industrial automation, end-of-line testing, CAN communication, and hardware/software integration.
 
-I care about reliability, maintainability, and making good use of memory and compute. My public work includes C communication code; I’m also exploring Rust developer tooling through contributions to Tokensave.
+I care about reliability, maintainability, and making good use of memory and compute.
 
 Beyond code, I contribute articles and help organize events with [Italian Embedded](https://www.italianembedded.com), connecting people interested in embedded systems. I’m also an organizer of [Rust Milano](https://www.meetup.com/rust-language-milan/), the Milan Rust community.
 
@@ -16,9 +16,12 @@ Beyond code, I contribute articles and help organize events with [Italian Embedd
 
 | Area | Technologies and context |
 | :--- | :--- |
-| Public projects & contributions | **C**, **Rust**, GPI-2 / GASPI, Jupyter |
-| Web & everyday tools | HTML / CSS, Jekyll, Git, Linux |
-| Application & hardware interests | C# / .NET, embedded firmware, CAN, industrial test systems |
+| Languages | **C**, **Rust**, **C++**, C#, Python, TypeScript, Bash |
+| Embedded systems | Embedded Linux, Yocto, Zephyr, Embassy, Segger J-Link |
+| Communication & integration | CAN, D-Bus, KWP2000, ANT+, BLE / GATT, TCP / UDP sockets |
+| Applications & visualization | Qt, Angular, Three.js, GraphQL, Flutter |
+| Quality & diagnostics | Cppcheck, CodeChecker, Valgrind, GoogleTest, Jenkins, CVE / SBOM analysis |
+| Parallel computing | MPI, GPI-2 / GASPI, Slurm |
 
 ## Featured work
 
