@@ -50,7 +50,7 @@ My personal homepage and blog, built as a static site with reusable layouts and 
 
 ## Recent public activity
 
-A rolling snapshot of my public GitHub work, refreshed daily. [All activity](https://github.com/atontini?tab=overview).
+A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
 - 2026-10-18 — Pushed changes to [atontini/gpi2-example](https://github.com/atontini/gpi2-example)
