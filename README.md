@@ -16,7 +16,7 @@ Beyond code, I contribute articles and help organize events with [Italian Embedd
 
 | Area | Technologies and context |
 | :--- | :--- |
-| Languages | **C**, **Rust**, **C++**, C#, Python, TypeScript, Bash |
+| Languages | C, C++, Rust, C#, Python, TypeScript |
 | Embedded systems | Embedded Linux, Yocto, Zephyr, Embassy, Segger J-Link |
 | Communication & integration | CAN, D-Bus, KWP2000, ANT+, BLE / GATT, TCP / UDP sockets |
 | Applications & visualization | Qt, Angular, Three.js, GraphQL, Flutter |
