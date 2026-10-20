@@ -1,4 +1,4 @@
-name: Update profile activity
+name: Update profile activity and contributions
 
 on:
   schedule:
@@ -9,9 +9,10 @@ on:
     paths:
       - '.github/workflows/update-activity.yml'
       - '.github/scripts/update_activity.py'
+      - '.github/scripts/test_update_activity.py'
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: profile-activity
@@ -19,11 +20,15 @@ concurrency:
 
 jobs:
   update:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: Refresh public activity
+      - name: Test profile generator
+        run: python3 -m unittest discover -s .github/scripts -p 'test_*.py' -v
+      - name: Refresh public activity and contributions
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/update_activity.py
@@ -35,6 +40,6 @@ jobs:
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m 'docs: refresh recent public activity'
+          git commit -m 'docs: refresh public activity and contributions'
           git pull --rebase origin main
           git push origin HEAD:main
