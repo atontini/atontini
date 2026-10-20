@@ -58,7 +58,7 @@ Public upstream projects where I have authored merged pull requests, including p
 <!-- PROJECTS:START -->
 ### Contributed projects (merged pull requests)
 
-- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [16 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
+- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [21 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
 - [alvarogaiotti/FIGBGET](https://github.com/alvarogaiotti/FIGBGET) — [1 merged PR](https://github.com/alvarogaiotti/FIGBGET/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [DevelopersLife/DevelopersLife.github.io](https://github.com/DevelopersLife/DevelopersLife.github.io) — [1 merged PR](https://github.com/DevelopersLife/DevelopersLife.github.io/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning) — [1 merged PR](https://github.com/josephmisiti/awesome-machine-learning/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
@@ -77,11 +77,11 @@ Forks alone do not imply an upstream contribution.
 A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
-- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#722](https://github.com/aovestdipaperino/tokensave/pull/722)
-- 2026-10-20 — Opened pull request [aovestdipaperino/tokensave#732](https://github.com/aovestdipaperino/tokensave/pull/732)
-- 2026-10-19 — Closed pull request [aovestdipaperino/tokensave#730](https://github.com/aovestdipaperino/tokensave/pull/730)
-- 2026-10-19 — Opened pull request [aovestdipaperino/tokensave#728](https://github.com/aovestdipaperino/tokensave/pull/728)
-- 2026-10-19 — Opened pull request [aovestdipaperino/tokensave#726](https://github.com/aovestdipaperino/tokensave/pull/726)
+- 2026-10-20 — Opened pull request [aovestdipaperino/tokensave#736](https://github.com/aovestdipaperino/tokensave/pull/736)
+- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#728](https://github.com/aovestdipaperino/tokensave/pull/728)
+- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#710](https://github.com/aovestdipaperino/tokensave/pull/710)
+- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#732](https://github.com/aovestdipaperino/tokensave/pull/732)
+- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#724](https://github.com/aovestdipaperino/tokensave/pull/724)
 <!-- ACTIVITY:END -->
 
 ## Connect
