@@ -56,11 +56,11 @@ My personal homepage and blog, built as a static site with reusable layouts and 
 A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
-- 2026-10-19 — Merged pull request [aovestdipaperino/tokensave#719](https://github.com/aovestdipaperino/tokensave/pull/719)
-- 2026-10-19 — Merged pull request [aovestdipaperino/tokensave#718](https://github.com/aovestdipaperino/tokensave/pull/718)
-- 2026-10-19 — Pushed changes to [atontini/tokensave](https://github.com/atontini/tokensave)
-- 2026-10-19 — Merged pull request [aovestdipaperino/tokensave#712](https://github.com/aovestdipaperino/tokensave/pull/712)
-- 2026-10-19 — Opened pull request [tursodatabase/libsql#2296](https://github.com/tursodatabase/libsql/pull/2296)
+- 2026-10-20 — Opened pull request [aovestdipaperino/tokensave#732](https://github.com/aovestdipaperino/tokensave/pull/732)
+- 2026-10-19 — Closed pull request [aovestdipaperino/tokensave#730](https://github.com/aovestdipaperino/tokensave/pull/730)
+- 2026-10-19 — Opened pull request [aovestdipaperino/tokensave#728](https://github.com/aovestdipaperino/tokensave/pull/728)
+- 2026-10-19 — Opened pull request [aovestdipaperino/tokensave#726](https://github.com/aovestdipaperino/tokensave/pull/726)
+- 2026-10-19 — Opened pull request [aovestdipaperino/tokensave#724](https://github.com/aovestdipaperino/tokensave/pull/724)
 <!-- ACTIVITY:END -->
 
 ## Connect
