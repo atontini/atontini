@@ -58,7 +58,7 @@ Public upstream projects where I have authored merged pull requests, including p
 <!-- PROJECTS:START -->
 ### Contributed projects (merged pull requests)
 
-- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [21 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
+- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [22 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
 - [alvarogaiotti/FIGBGET](https://github.com/alvarogaiotti/FIGBGET) — [1 merged PR](https://github.com/alvarogaiotti/FIGBGET/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [DevelopersLife/DevelopersLife.github.io](https://github.com/DevelopersLife/DevelopersLife.github.io) — [1 merged PR](https://github.com/DevelopersLife/DevelopersLife.github.io/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning) — [1 merged PR](https://github.com/josephmisiti/awesome-machine-learning/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
@@ -69,6 +69,7 @@ Public upstream projects where I have authored merged pull requests, including p
 
 Forks alone do not imply an upstream contribution.
 
+- [de-vri-es/serial2-rs](https://github.com/de-vri-es/serial2-rs) — fork: [atontini/serial2-rs](https://github.com/atontini/serial2-rs)
 - [tursodatabase/libsql](https://github.com/tursodatabase/libsql) — fork: [atontini/libsql](https://github.com/atontini/libsql)
 <!-- PROJECTS:END -->
 
@@ -77,11 +78,11 @@ Forks alone do not imply an upstream contribution.
 A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
-- 2026-10-20 — Opened pull request [aovestdipaperino/tokensave#736](https://github.com/aovestdipaperino/tokensave/pull/736)
+- 2026-10-21 — Closed pull request [de-vri-es/serial2-rs#67](https://github.com/de-vri-es/serial2-rs/pull/67)
+- 2026-10-21 — Merged pull request [aovestdipaperino/tokensave#736](https://github.com/aovestdipaperino/tokensave/pull/736)
+- 2026-10-21 — Opened pull request [de-vri-es/serial2-rs#69](https://github.com/de-vri-es/serial2-rs/pull/69)
 - 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#728](https://github.com/aovestdipaperino/tokensave/pull/728)
-- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#710](https://github.com/aovestdipaperino/tokensave/pull/710)
-- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#732](https://github.com/aovestdipaperino/tokensave/pull/732)
-- 2026-10-20 — Merged pull request [aovestdipaperino/tokensave#724](https://github.com/aovestdipaperino/tokensave/pull/724)
+- 2026-10-20 — Pushed changes to [atontini/tokensave](https://github.com/atontini/tokensave)
 <!-- ACTIVITY:END -->
 
 ## Connect
