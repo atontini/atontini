@@ -30,8 +30,9 @@ Public upstream projects where I have authored merged pull requests, including p
 <!-- PROJECTS:START -->
 ### Contributed projects (merged pull requests)
 
-- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [35 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
+- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [80 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
 - [alvarogaiotti/FIGBGET](https://github.com/alvarogaiotti/FIGBGET) — [1 merged PR](https://github.com/alvarogaiotti/FIGBGET/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
+- [de-vri-es/serial2-rs](https://github.com/de-vri-es/serial2-rs) — [1 merged PR](https://github.com/de-vri-es/serial2-rs/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/serial2-rs)
 - [DevelopersLife/DevelopersLife.github.io](https://github.com/DevelopersLife/DevelopersLife.github.io) — [1 merged PR](https://github.com/DevelopersLife/DevelopersLife.github.io/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning) — [1 merged PR](https://github.com/josephmisiti/awesome-machine-learning/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [kushagra10025/OpenGL-Starter](https://github.com/kushagra10025/OpenGL-Starter) — [1 merged PR](https://github.com/kushagra10025/OpenGL-Starter/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
@@ -42,7 +43,8 @@ Public upstream projects where I have authored merged pull requests, including p
 
 Forks alone do not imply an upstream contribution.
 
-- [de-vri-es/serial2-rs](https://github.com/de-vri-es/serial2-rs) — fork: [atontini/serial2-rs](https://github.com/atontini/serial2-rs)
+- [aovestdipaperino/plank](https://github.com/aovestdipaperino/plank) — fork: [atontini/plank](https://github.com/atontini/plank)
+- [earendil-works/pi](https://github.com/earendil-works/pi) — fork: [atontini/pi](https://github.com/atontini/pi)
 - [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — fork: [atontini/caveman](https://github.com/atontini/caveman)
 - [Mercurygram/Mercurygram](https://github.com/Mercurygram/Mercurygram) — fork: [atontini/Mercurygram](https://github.com/atontini/Mercurygram)
 - [tursodatabase/libsql](https://github.com/tursodatabase/libsql) — fork: [atontini/libsql](https://github.com/atontini/libsql)
@@ -53,11 +55,11 @@ Forks alone do not imply an upstream contribution.
 A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
-- 2026-10-25 — Pushed changes to [atontini/caveman](https://github.com/atontini/caveman)
-- 2026-10-25 — Opened pull request [JuliusBrussee/caveman#1404](https://github.com/JuliusBrussee/caveman/pull/1404)
-- 2026-10-25 — Pushed changes to [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave)
-- 2026-10-25 — Opened pull request [aovestdipaperino/tokensave#800](https://github.com/aovestdipaperino/tokensave/pull/800)
-- 2026-10-25 — Opened pull request [tursodatabase/turso#10782](https://github.com/tursodatabase/turso/pull/10782)
+- 2026-11-02 — Opened pull request [aovestdipaperino/tokensave#913](https://github.com/aovestdipaperino/tokensave/pull/913)
+- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#911](https://github.com/aovestdipaperino/tokensave/pull/911)
+- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#910](https://github.com/aovestdipaperino/tokensave/pull/910)
+- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#909](https://github.com/aovestdipaperino/tokensave/pull/909)
+- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#893](https://github.com/aovestdipaperino/tokensave/pull/893)
 <!-- ACTIVITY:END -->
 
 ## Connect
