@@ -30,7 +30,8 @@ Public upstream projects where I have authored merged pull requests, including p
 <!-- PROJECTS:START -->
 ### Contributed projects (merged pull requests)
 
-- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [80 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
+- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [85 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/tokensave)
+- [aovestdipaperino/plank](https://github.com/aovestdipaperino/plank) — [6 merged PRs](https://github.com/aovestdipaperino/plank/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/plank)
 - [alvarogaiotti/FIGBGET](https://github.com/alvarogaiotti/FIGBGET) — [1 merged PR](https://github.com/alvarogaiotti/FIGBGET/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [de-vri-es/serial2-rs](https://github.com/de-vri-es/serial2-rs) — [1 merged PR](https://github.com/de-vri-es/serial2-rs/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini) · [current fork](https://github.com/atontini/serial2-rs)
 - [DevelopersLife/DevelopersLife.github.io](https://github.com/DevelopersLife/DevelopersLife.github.io) — [1 merged PR](https://github.com/DevelopersLife/DevelopersLife.github.io/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
@@ -43,8 +44,9 @@ Public upstream projects where I have authored merged pull requests, including p
 
 Forks alone do not imply an upstream contribution.
 
-- [aovestdipaperino/plank](https://github.com/aovestdipaperino/plank) — fork: [atontini/plank](https://github.com/atontini/plank)
-- [earendil-works/pi](https://github.com/earendil-works/pi) — fork: [atontini/pi](https://github.com/atontini/pi)
+- [crossterm-rs/crossterm](https://github.com/crossterm-rs/crossterm) — fork: [atontini/crossterm](https://github.com/atontini/crossterm)
+- [GrafeoDB/grafeo](https://github.com/GrafeoDB/grafeo) — fork: [atontini/grafeo](https://github.com/atontini/grafeo)
+- [herdrdev/herdr](https://github.com/herdrdev/herdr) — fork: [atontini/herdr](https://github.com/atontini/herdr)
 - [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — fork: [atontini/caveman](https://github.com/atontini/caveman)
 - [Mercurygram/Mercurygram](https://github.com/Mercurygram/Mercurygram) — fork: [atontini/Mercurygram](https://github.com/atontini/Mercurygram)
 - [tursodatabase/libsql](https://github.com/tursodatabase/libsql) — fork: [atontini/libsql](https://github.com/atontini/libsql)
@@ -55,11 +57,11 @@ Forks alone do not imply an upstream contribution.
 A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
-- 2026-11-02 — Opened pull request [aovestdipaperino/tokensave#913](https://github.com/aovestdipaperino/tokensave/pull/913)
-- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#911](https://github.com/aovestdipaperino/tokensave/pull/911)
-- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#910](https://github.com/aovestdipaperino/tokensave/pull/910)
-- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#909](https://github.com/aovestdipaperino/tokensave/pull/909)
-- 2026-11-02 — Merged pull request [aovestdipaperino/tokensave#893](https://github.com/aovestdipaperino/tokensave/pull/893)
+- 2026-11-09 — Merged pull request [aovestdipaperino/tokensave#939](https://github.com/aovestdipaperino/tokensave/pull/939)
+- 2026-11-09 — Opened pull request [aovestdipaperino/plank#98](https://github.com/aovestdipaperino/plank/pull/98)
+- 2026-11-07 — Pushed changes to [atontini/plank](https://github.com/atontini/plank)
+- 2026-11-05 — Closed pull request [Mercurygram/Mercurygram#163](https://github.com/Mercurygram/Mercurygram/pull/163)
+- 2026-11-05 — Merged pull request [aovestdipaperino/plank#96](https://github.com/aovestdipaperino/plank/pull/96)
 <!-- ACTIVITY:END -->
 
 ## Connect
