@@ -49,10 +49,11 @@ Public upstream projects where I have authored merged pull requests, grouped by 
 A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
-- 2026-11-09 — Merged pull request [aovestdipaperino/tokensave#939](https://github.com/aovestdipaperino/tokensave/pull/939)
-- 2026-11-09 — Opened pull request [aovestdipaperino/plank#98](https://github.com/aovestdipaperino/plank/pull/98)
-- 2026-11-05 — Closed pull request [Mercurygram/Mercurygram#163](https://github.com/Mercurygram/Mercurygram/pull/163)
-- 2026-11-05 — Merged pull request [aovestdipaperino/plank#96](https://github.com/aovestdipaperino/plank/pull/96)
+- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1019](https://github.com/aovestdipaperino/tokensave/pull/1019)
+- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1005](https://github.com/aovestdipaperino/tokensave/pull/1005)
+- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1018](https://github.com/aovestdipaperino/tokensave/pull/1018)
+- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1017](https://github.com/aovestdipaperino/tokensave/pull/1017)
+- 2026-11-14 — Merged pull request [aovestdipaperino/tokensave#1004](https://github.com/aovestdipaperino/tokensave/pull/1004)
 <!-- ACTIVITY:END -->
 
 ## Connect
