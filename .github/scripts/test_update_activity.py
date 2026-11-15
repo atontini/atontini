@@ -67,40 +67,32 @@ class ProjectTests(unittest.TestCase):
     @patch.object(app, 'merged_prs')
     def test_deleted_forks_counts_and_case_insensitive_grouping(self, search):
         search.return_value = [pr(1), pr(2, 'Upstream/Project'), pr(2),
-                               pr(3, 'old/deleted-fork')]
+                               dict(pr(3, 'archived/project'), head=None)]
         api = Mock()
-        api.pages.return_value = [
-            {'full_name': 'me/project', 'fork': True},
-            {'full_name': 'me/other', 'fork': True},
-            {'full_name': 'me/own', 'fork': False},
-            {'full_name': 'me/secret', 'fork': True, 'private': True},
-        ]
-        api.get.side_effect = [{'parent': {'full_name': 'UPSTREAM/project'}},
-                               {'parent': {'full_name': 'another/project'}}]
         body = '\n'.join(app.project_lines(api, 'me'))
         self.assertIn('2 merged PRs', body)
-        self.assertIn('old/deleted-fork', body)
-        self.assertIn('[current fork](https://github.com/me/project)', body)
-        contributed, forks = body.split('### Other current forks')
-        self.assertNotIn('UPSTREAM/project', forks)
-        self.assertIn('another/project', forks)
-        self.assertNotIn('secret', body)
-        self.assertEqual(api.get.call_count, 2)
+        self.assertIn('[archived/project](https://github.com/archived/project)', body)
+        self.assertEqual(body.count('upstream/project]'), 1)
+        self.assertNotIn('fork', body.lower())
+        self.assertNotIn('https://github.com/me/', body)
+        api.get.assert_not_called()
+        api.pages.assert_not_called()
 
     @patch.object(app, 'merged_prs', return_value=[])
     def test_empty_state(self, search):
         api = Mock()
-        api.pages.return_value = []
         body = '\n'.join(app.project_lines(api, 'me'))
         self.assertIn('No public merged', body)
-        self.assertIn('No other public forks', body)
+        self.assertNotIn('fork', body.lower())
+        api.get.assert_not_called()
+        api.pages.assert_not_called()
 
 
 class ApiTests(unittest.TestCase):
-    def test_repository_pagination(self):
+    def test_event_pagination(self):
         api = app.GitHub()
         api.get = Mock(side_effect=[list(range(100)), [100]])
-        self.assertEqual(len(list(api.pages('/users/me/repos'))), 101)
+        self.assertEqual(len(list(api.pages('/users/me/events/public'))), 101)
         self.assertEqual(api.get.call_args.kwargs['page'], 2)
 
     @patch.object(app.time, 'sleep')
@@ -165,7 +157,7 @@ class ReadmeTests(unittest.TestCase):
     @patch.object(app, 'GitHub')
     def test_api_failure_preserves_existing_readme(self, github, projects):
         github.return_value.pages.return_value = []
-        original = f'Andrea —\n{app.START}\nold\n{app.END}\n{app.PROJECTS_START}\nold\n{app.PROJECTS_END}'
+        original = f'Andrea —\n## Selected Open-Source Contributions\nManually curated PRs.\n{app.START}\nold\n{app.END}\n{app.PROJECTS_START}\nold\n{app.PROJECTS_END}'
         previous = Path.cwd()
         with tempfile.TemporaryDirectory() as folder:
             try:
@@ -181,7 +173,7 @@ class ReadmeTests(unittest.TestCase):
     @patch.object(app, 'GitHub')
     def test_successful_update_is_utf8_and_idempotent(self, github, projects):
         github.return_value.pages.return_value = []
-        original = f'Andrea —\n{app.START}\nold\n{app.END}\n{app.PROJECTS_START}\nold\n{app.PROJECTS_END}'
+        original = f'Andrea —\n## Selected Open-Source Contributions\nManually curated PRs.\n{app.START}\nold\n{app.END}\n{app.PROJECTS_START}\nold\n{app.PROJECTS_END}'
         previous = Path.cwd()
         with tempfile.TemporaryDirectory() as folder:
             try:
@@ -193,6 +185,9 @@ class ReadmeTests(unittest.TestCase):
                 app.main()
                 self.assertEqual(path.read_bytes(), first)
                 self.assertIn('Andrea —', path.read_text(encoding='utf-8'))
+                self.assertIn('## Selected Open-Source Contributions\nManually curated PRs.', path.read_text(encoding='utf-8'))
+                for marker in (app.START, app.END, app.PROJECTS_START, app.PROJECTS_END):
+                    self.assertEqual(path.read_text(encoding='utf-8').count(marker), 1)
                 self.assertFalse(Path('README.md.tmp').exists())
             finally:
                 os.chdir(previous)
@@ -204,6 +199,73 @@ class ReadmeTests(unittest.TestCase):
         lines = app.activity_lines([event, event], 'me')
         self.assertEqual(len(lines), 1)
         self.assertIn('Merged pull request', lines[0])
+
+    def test_activity_states_latest_event_case_insensitive_and_limit(self):
+        def event(number, action, merged=False, repo='upstream/project', day=1):
+            return {'created_at': f'2026-01-{day:02d}T12:00:00Z', 'public': True,
+                    'repo': {'name': repo}, 'type': 'PullRequestEvent',
+                    'payload': {'action': action,
+                                'pull_request': {'number': number, 'merged': merged}}}
+        events = [event(1, 'opened'), event(1, 'closed', True, 'Upstream/Project', 2),
+                  event(2, 'closed'), event(3, 'opened'), event(4, 'reopened'),
+                  event(5, 'opened'), event(6, 'opened')]
+        lines = app.activity_lines(events, 'me')
+        self.assertEqual(len(lines), 5)
+        self.assertIn('Merged pull request', lines[0])
+        self.assertEqual(sum('#1]' in line for line in lines), 1)
+        self.assertTrue(any('Closed pull request' in line for line in lines))
+        self.assertTrue(any('Opened pull request' in line for line in lines))
+        self.assertTrue(any('Reopened pull request' in line for line in lines))
+
+    @patch.object(app, 'GitHub')
+    def test_real_readme_regenerates_without_forks_and_preserves_curated_section(self, github):
+        original = (Path(__file__).resolve().parents[2] / 'README.md').read_text(encoding='utf-8')
+        curated = original.split('## Selected Open-Source Contributions')[1].split('## Upstream contributions')[0]
+        api = github.return_value
+        api.pages.return_value = []
+        api.get.return_value = result([pr(1), pr(2, 'UPSTREAM/Project')])
+        previous = Path.cwd()
+        with tempfile.TemporaryDirectory() as folder:
+            try:
+                os.chdir(folder)
+                path = Path('README.md')
+                path.write_text(original, encoding='utf-8')
+                app.main()
+                first = path.read_bytes()
+                app.main()
+                updated = path.read_text(encoding='utf-8')
+                self.assertEqual(path.read_bytes(), first)
+                self.assertIn(curated, updated)
+                self.assertIn('2 merged PRs', updated)
+                self.assertNotIn('fork', updated.lower())
+                for call in api.get.call_args_list:
+                    self.assertEqual(call.args[0], '/search/issues')
+                for call in api.pages.call_args_list:
+                    self.assertTrue(call.args[0].endswith('/events/public'))
+            finally:
+                os.chdir(previous)
+
+    @patch.object(app, 'GitHub')
+    def test_bad_search_responses_do_not_write_readme(self, github):
+        original = (f'Curated content\n{app.START}\nold\n{app.END}\n'
+                    f'{app.PROJECTS_START}\nold\n{app.PROJECTS_END}')
+        previous = Path.cwd()
+        with tempfile.TemporaryDirectory() as folder:
+            try:
+                os.chdir(folder)
+                path = Path('README.md')
+                path.write_text(original, encoding='utf-8')
+                for response in (result([], 1), result([], incomplete=True), {},
+                                 result([pr(1), pr(1)], 2)):
+                    with self.subTest(response=response):
+                        github.return_value.pages.return_value = []
+                        github.return_value.get.return_value = response
+                        with self.assertRaises((RuntimeError, KeyError)):
+                            app.main()
+                        self.assertEqual(path.read_text(encoding='utf-8'), original)
+                        self.assertFalse(Path('README.md.tmp').exists())
+            finally:
+                os.chdir(previous)
 
 
 if __name__ == '__main__':

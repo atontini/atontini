@@ -1,4 +1,4 @@
-"""Refresh public activity, merged upstream PRs, and current forks."""
+"""Refresh public activity and merged upstream PRs."""
 from datetime import datetime, timedelta, timezone
 import json
 import os
@@ -114,25 +114,8 @@ def project_lines(api, username):
         repo = pr['repository_url'].removeprefix(API + '/repos/')
         if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repo):
             raise ValueError('Invalid repository name in search results')
-        entry = contributed.setdefault(repo.lower(), {'name': repo, 'prs': set(), 'forks': set()})
+        entry = contributed.setdefault(repo.lower(), {'name': repo, 'prs': set()})
         entry['prs'].add(pr['id'])
-
-    forks = {}
-    for repo in api.pages(f'/users/{username}/repos', type='owner', sort='full_name'):
-        if not repo['fork'] or repo.get('private'):
-            continue
-        detail = api.get(f"/repos/{repo['full_name']}")
-        parent = detail.get('parent')
-        if parent and not parent.get('private'):
-            key = parent['full_name'].lower()
-            name = parent['full_name']
-        else:
-            key = repo['full_name'].lower()
-            name = repo['full_name']
-        entry = contributed.get(key)
-        if entry is None:
-            entry = forks.setdefault(key, {'name': name, 'forks': set()})
-        entry['forks'].add(repo['full_name'])
 
     lines = ['### Contributed projects (merged pull requests)', '']
     for entry in sorted(contributed.values(),
@@ -143,20 +126,9 @@ def project_lines(api, username):
         line = (f"- [{name}](https://github.com/{name}) — "
                 f"[{count} merged {'PR' if count == 1 else 'PRs'}]"
                 f"(https://github.com/{name}/pulls?{query})")
-        for fork in sorted(entry['forks']):
-            line += f' · [current fork](https://github.com/{fork})'
         lines.append(line)
     if not contributed:
         lines.append('No public merged upstream pull requests found.')
-    lines.extend(['', '### Other current forks', '',
-                  'Forks alone do not imply an upstream contribution.', ''])
-    for entry in sorted(forks.values(), key=lambda e: e['name'].lower()):
-        name = entry['name']
-        links = ', '.join(f'[{fork}](https://github.com/{fork})'
-                          for fork in sorted(entry['forks']))
-        lines.append(f'- [{name}](https://github.com/{name}) — fork: {links}')
-    if not forks:
-        lines.append('No other public forks.')
     return lines
 
 
@@ -191,13 +163,13 @@ def activity_lines(events, username):
             if not isinstance(number, int):
                 continue
             text = f'{action.capitalize()} pull request [{repo}#{number}]({url}/pull/{number})'
-            key = (kind, repo, number)
+            key = (kind, repo.lower(), number)
         elif kind == 'PushEvent':
             text = f'Pushed changes to [{repo}]({url})'
-            key = (kind, repo)
+            key = (kind, repo.lower())
         elif kind == 'ReleaseEvent' and payload.get('action') == 'published':
             text = f'Published a release in [{repo}]({url}/releases)'
-            key = (kind, repo)
+            key = (kind, repo.lower())
         else:
             continue
         if key in seen:
