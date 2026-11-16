@@ -33,7 +33,7 @@ Public upstream projects where I have authored merged pull requests, grouped by 
 <!-- PROJECTS:START -->
 ### Contributed projects (merged pull requests)
 
-- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [133 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
+- [aovestdipaperino/tokensave](https://github.com/aovestdipaperino/tokensave) — [134 merged PRs](https://github.com/aovestdipaperino/tokensave/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [aovestdipaperino/plank](https://github.com/aovestdipaperino/plank) — [7 merged PRs](https://github.com/aovestdipaperino/plank/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [alvarogaiotti/FIGBGET](https://github.com/alvarogaiotti/FIGBGET) — [1 merged PR](https://github.com/alvarogaiotti/FIGBGET/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
 - [de-vri-es/serial2-rs](https://github.com/de-vri-es/serial2-rs) — [1 merged PR](https://github.com/de-vri-es/serial2-rs/pulls?q=is%3Apr+is%3Amerged+author%3Aatontini)
@@ -49,11 +49,11 @@ Public upstream projects where I have authored merged pull requests, grouped by 
 A rolling snapshot of my public GitHub work, refreshed weekly. [All activity](https://github.com/atontini?tab=overview).
 
 <!-- ACTIVITY:START -->
+- 2026-11-15 — Opened pull request [zephyrproject-rtos/zephyr-lang-rust#193](https://github.com/zephyrproject-rtos/zephyr-lang-rust/pull/193)
+- 2026-11-15 — Opened pull request [zephyrproject-rtos/zephyr-lang-rust#192](https://github.com/zephyrproject-rtos/zephyr-lang-rust/pull/192)
+- 2026-11-15 — Opened pull request [zephyrproject-rtos/zephyr-lang-rust#191](https://github.com/zephyrproject-rtos/zephyr-lang-rust/pull/191)
+- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#990](https://github.com/aovestdipaperino/tokensave/pull/990)
 - 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1019](https://github.com/aovestdipaperino/tokensave/pull/1019)
-- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1005](https://github.com/aovestdipaperino/tokensave/pull/1005)
-- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1018](https://github.com/aovestdipaperino/tokensave/pull/1018)
-- 2026-11-15 — Merged pull request [aovestdipaperino/tokensave#1017](https://github.com/aovestdipaperino/tokensave/pull/1017)
-- 2026-11-14 — Merged pull request [aovestdipaperino/tokensave#1004](https://github.com/aovestdipaperino/tokensave/pull/1004)
 <!-- ACTIVITY:END -->
 
 ## Connect
